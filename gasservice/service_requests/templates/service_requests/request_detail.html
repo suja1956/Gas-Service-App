@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Request Details{% endblock %}
+
+{% block content %}
+<h2>Service Request Details</h2>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Request Type:</strong> {{ service_request.request_type }}</p>
+        <p><strong>Details:</strong> {{ service_request.details }}</p>
+        <p><strong>Status:</strong> <span class="badge bg-warning">{{ service_request.status }}</span></p>
+        <p><strong>Submitted At:</strong> {{ service_request.submitted_at }}</p>
+        {% if service_request.resolved_at %}
+            <p><strong>Resolved At:</strong> {{ service_request.resolved_at }}</p>
+        {% endif %}
+        {% if service_request.attachment %}
+            <p><strong>Attachment:</strong> <a href="{{ service_request.attachment.url }}" target="_blank">View File</a></p>
+        {% endif %}
+    </div>
+</div>
+<a href="{% url 'service_requests:list_requests' %}" class="btn btn-secondary mt-3">Back to Requests</a>
+{% endblock %}

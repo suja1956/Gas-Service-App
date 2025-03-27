@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Submit Request{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">Submit a Service Request</div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
