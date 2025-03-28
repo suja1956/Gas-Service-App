@@ -4,18 +4,18 @@ A web application to provide consumer services for gas utilities, allowing custo
 
 ---
 
-## Features ✨
+## Features 
 
 ### For Customers
-- ✅ Submit service requests online
-- ✅ Attach files (images/documents) to requests
-- ✅ Track the status of submitted requests
-- ✅ View personal account details
+-  Submit service requests online
+-  Attach files (images/documents) to requests
+-  Track the status of submitted requests
+-  View personal account details
 
 ### For Customer Support Representatives
-- ✅ View and manage customer requests
-- ✅ Update request status (Pending, In Progress, Resolved)
-- ✅ Provide customer support
+- View and manage customer requests
+- Update request status (Pending, In Progress, Resolved)
+- Provide customer support
 
 
 ---
